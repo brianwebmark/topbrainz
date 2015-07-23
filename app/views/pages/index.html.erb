@@ -1,0 +1,26 @@
+<div class ="table-responsive">
+	<table class ="table table-hover table-bordere">
+		<th>
+			<tr>
+				<th>NAME</th>
+				<th>TITLE</th>
+				<th>SECTION</th>
+				<th>CATEGORY</th>
+				
+				<th>CREATED</th>
+			</tr>
+		</th>
+	<% @pages.each do |p| %>
+		<tbody>
+			<tr>
+			<td><%= p.name %></td>	
+			<td><%= p.title %></td>
+			<td><%= p.section %></td>
+			<td><%= p.category %></td>
+			<td><%= time_ago_in_words(p.created_at, include_seconds:true) %></td>
+
+			</tr>
+		</tbody>
+	</table>
+</div>
+	<% end %>

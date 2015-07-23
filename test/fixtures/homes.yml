@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  category: MyString
+  desc: MyText
+  bank_ac: 9.99
+  dob: 2015-07-13
+  age: 1
+
+two:
+  title: MyString
+  category: MyString
+  desc: MyText
+  bank_ac: 9.99
+  dob: 2015-07-13
+  age: 1
