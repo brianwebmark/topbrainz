@@ -10,6 +10,10 @@ class PagesController < ApplicationController
    def internship
    	@Internship = Page.where(category: "Internship")
    end
+   def training
+   	@Training = Page.where(category: "Training")
+   	
+   end
    def admin
    end
 

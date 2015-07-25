@@ -1,0 +1,26 @@
+<div class ="table-responsive">
+	<table class ="table table-hover table-border">
+		<th>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>TITLE</th>
+				<th>SECTION</th>
+				<th>CATEGORY</th>
+				<th>CREATED</th>
+			</tr>
+		</th>
+		<tbody>
+			
+	<% @Training.each do |i| %>
+		<tr>
+			<td><%= i.id %></td>
+			<td><%= i.name %></td>	
+			<td><%= i.title %></td>
+			<td><%= i.section %></td>
+			<td><%= i.category %></td>
+			<td><%= time_ago_in_words(i.created_at, include_seconds:true) %></td>
+			</tr>
+	<% end %>
+	
+	</table>

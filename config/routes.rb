@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   get 'pages/software'
   get 'pages/internship'
+  get 'pages/training'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'pages#index'
