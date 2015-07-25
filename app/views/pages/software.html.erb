@@ -12,18 +12,15 @@
 		</th>
 		<tbody>
 			
-	<% @pages.each do |p| %>
+	<% @software.each do |s| %>
 		<tr>
-			<td><%= p.id %></td>
-			<td><%= p.name %></td>	
-			<td><%= p.title %></td>
-			<td><%= p.section %></td>
-			<td><%= p.category %></td>
-			<td><%= time_ago_in_words(p.created_at, include_seconds:true) %></td>
+			<td><%= s.id %></td>
+			<td><%= s.name %></td>	
+			<td><%= s.title %></td>
+			<td><%= s.section %></td>
+			<td><%= s.category %></td>
+			<td><%= time_ago_in_words(s.created_at, include_seconds:true) %></td>
 			</tr>
 	<% end %>
 	
 	</table>
-	</tbody>
-</div>
-	
